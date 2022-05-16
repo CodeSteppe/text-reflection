@@ -40,12 +40,12 @@ h1::after {
   letter-spacing: calc(var(--font-size) * 0.1);
   margin-top: 50%;
   margin-left: 50%;
-  transform: translate(-50%, -180px);
+  transform: translate(-50%, -168px);
 }
 
 h1::after {
   transform-style: preserve-3d;
-  transform: translate(-50%, -44px) rotateX(180deg);
+  transform: translate(-50%, -24px) rotateX(180deg);
   -webkit-mask-image: linear-gradient(transparent 0%, transparent 30%, rgba(0, 0, 0, 1));
   mask-image: linear-gradient(transparent 0%, transparent 30%, rgba(0, 0, 0, 1));
 }
