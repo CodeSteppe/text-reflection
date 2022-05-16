@@ -28,10 +28,24 @@ body {
 }
 
 h1 {
+  position: relative;
+}
+
+h1::before,
+h1::after {
+  content: attr(data-text);
+  position: absolute;
   font-size: var(--font-size);
   text-transform: uppercase;
   letter-spacing: calc(var(--font-size) * 0.1);
-  -webkit-box-reflect: below -76px linear-gradient(transparent 0%, transparent 30%, #000);
-  position: relative;
-  bottom: 54px;
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -180px);
+}
+
+h1::after {
+  transform-style: preserve-3d;
+  transform: translate(-50%, -44px) rotateX(180deg);
+  -webkit-mask-image: linear-gradient(transparent 0%, transparent 30%, rgba(0, 0, 0, 1));
+  mask-image: linear-gradient(transparent 0%, transparent 30%, rgba(0, 0, 0, 1));
 }
