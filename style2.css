@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 :root {
-  --font-size: 10vw;
-  --line-height: calc(0.8 * var(--font-size));
+  --font-size: 14vw;
+  --line-height: calc(0.95 * var(--font-size));
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -40,8 +40,6 @@ h1::after {
   line-height: var(--line-height);
   text-transform: uppercase;
   letter-spacing: calc(var(--font-size) * 0.1);
-  margin-top: 50%;
-  margin-left: 50%;
   transform: translate(-50%, -100%);
 }
 
