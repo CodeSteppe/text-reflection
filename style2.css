@@ -39,6 +39,7 @@ h1::after {
   font-size: var(--font-size);
   line-height: var(--line-height);
   text-transform: uppercase;
+  user-select: none;
   letter-spacing: calc(var(--font-size) * 0.1);
   transform: translate(-50%, -100%);
 }

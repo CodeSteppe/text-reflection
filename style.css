@@ -33,6 +33,7 @@ h1 {
   line-height: var(--line-height);
   text-transform: uppercase;
   letter-spacing: calc(var(--font-size) * 0.1);
+  user-select: none;
   -webkit-box-reflect: below 0
     linear-gradient(transparent 0%, transparent 16%, #000);
   position: relative;
