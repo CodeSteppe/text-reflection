@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
 :root {
-  --font-size: 180px;
+  --font-size: 10vw;
+  --line-height: calc(0.8 * var(--font-size));
 }
 
 * {
@@ -16,7 +17,7 @@ body {
   overflow: hidden;
   background: linear-gradient(
     to bottom,
-    rgb(0, 81, 128) 0%,
+    rgb(1, 121, 190) 0%,
     rgb(167, 216, 252) 30%,
     rgb(255, 255, 255) 50%,
     rgb(255, 255, 255) 50%,
@@ -29,9 +30,11 @@ body {
 
 h1 {
   font-size: var(--font-size);
+  line-height: var(--line-height);
   text-transform: uppercase;
   letter-spacing: calc(var(--font-size) * 0.1);
-  -webkit-box-reflect: below -76px linear-gradient(transparent 0%, transparent 30%, #000);
+  -webkit-box-reflect: below 0
+    linear-gradient(transparent 0%, transparent 16%, #000);
   position: relative;
-  bottom: 54px;
+  bottom: calc(0.5 * var(--line-height));
 }
